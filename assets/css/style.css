@@ -1,0 +1,230 @@
+html {
+    scroll-behavior: auto !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+}
+
+
+
+header {
+    overflow: hidden;
+    position: relative;
+    top: 6rem;
+}
+
+
+/* el navbar */
+
+.navbar {
+    position: fixed;
+    width: 100vw;
+    z-index: 3 !important;
+}
+
+.navbar-brand {
+    font-family: "Oswald";
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/* header*/
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+
+
+/* sobre punta arenas */
+
+h1 {
+    font-family: "Oswald";
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.texto {
+    font-family: "Oswald";
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.ico {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.texto-colapsado {
+    max-height: 120px;
+    /* lo que quieras mostrar por defecto */
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.texto-expandido {
+    max-height: none;
+    cursor: pointer;
+}
+
+
+
+
+/* destacados */
+
+h2 {
+    font-family: "Oswald";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.img-top {
+   width: 100%;        /* ocupa todo el ancho */
+  height: 200px;      /* altura fija */
+  object-fit: cover;  /* recorta manteniendo proporción */
+  display: block;     /* asegura que no haya espacios extra */
+border-radius: 5%;
+}
+
+
+.card-title {
+    font-family: "Oswald";
+    font-size: 28px;
+    font-weight: 400;
+    
+}
+
+a.text-dark.text-decoration-none:hover {
+  color: #0066cc;
+  font-size: 30px;
+}
+
+.card-text {
+    font-family: "Oswald";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+
+/* contacto */
+
+.ct {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.form-control {
+    border-color: black;
+}
+
+.bt {
+    color: black;
+    font-size: 20px;
+    border-radius: 25px !important;
+}
+
+.card-img-top {
+    height: 200px;
+    /* Ajusta según tu diseño */
+    object-fit: cover;
+    /* Recorta la imagen manteniendo proporción */
+}
+
+.row.g-4>[class*='col-'] {
+    display: flex;
+    /* Hace que las columnas sean flexibles */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer */
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* reducir medidas en formato mobile */
+
+@media (max-width: 768px) {
+    header {
+        top: 4.1rem;
+    }
+
+    .navbar-brand {
+        font-family: "Oswald";
+        font-size: 25px;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+
+    .imgnb {
+        width: 35px;
+    }
+
+    h1 {
+        font-family: "Oswald";
+        font-size: 30px;
+        font-weight: 700;
+
+    }
+
+    h2 {
+        font-family: "Oswald";
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .texto {
+        font-family: "Oswald";
+        font-size: 16px;
+        font-weight: 200;
+        text-align: justify;
+    }
+
+    .card-title {
+        font-family: "Oswald";
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .card-text {
+        font-family: "Oswald";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    .bt {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    #footer h1 {
+        font-size: 25px;
+    }
+
+    #footer i {
+        font-size: 25px;
+    }
+}
