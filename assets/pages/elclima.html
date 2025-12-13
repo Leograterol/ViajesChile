@@ -13,142 +13,131 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/viajes-chile-main/assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/img/favicon-48x48.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon-180x180.png">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         referrerpolicy="no-referrer">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/viajes-chile-main/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-    <title>Viajes Chile</title>
+    <!-- SEO -->
+    <title>Viajes Chile - Clima en Punta Arenas</title>
+    <meta name="description" content="Descubre el clima de Punta Arenas según la clasificación de Köppen. Invierno frío y veranos suaves.">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img class="imgnb" src="/viajes-chile-main/assets/img/viajes.svg" alt="Logo Viajes Chile">
-                Viajes Chile
-            </a>
+   <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img class="imgnb" src="/assets/img/viajes.svg" alt="Logo Viajes Chile">
+      Viajes Chile
+    </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-                aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú de navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link fs-3" href="/viajes-chile-main/index.html">Inicio</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link fs-3" href="/index.html">Inicio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- HEADER -->
-    <header>
-        <section class="pt-5 mt-2 container justify-content-center">
-            <h1 class="text-center fw-bold my-2">El Clima</h1>
-            <hr class="hero-line mx-auto opacity-100 w-50">
+<!-- HEADER -->
+<header>
+  <section class="header-section container-fluid justify-content-center">
+    <h1>El Clima</h1>
+    <hr class="hero-line-clima">
+    <p class="texto">
+      De acuerdo con la clasificación climática de Köppen, el clima de Punta Arenas es oceánico
+      subpolar (Cfc). Esto significa que posee un invierno moderadamente frío, sin bajar en ningún
+      mes de los 0 grados de media, y un verano muy suave y fresco; además,
+      las precipitaciones se distribuyen uniformemente a lo largo de todo el año.
+    </p>
+  </section>
+</header>
 
-            <div class="text-center">
-                <p class="texto">
-                    De acuerdo con la clasificación climática de Koppen, el clima de Punta Arenas es oceánico
-                    subpolar (Cfc). Esto significa que posee un invierno moderadamente frío, sin bajar en ningún
-                    mes de los 0 grados de media, y un verano muy suave y fresco; y además
-                    las precipitaciones se distribuyen más o menos uniformemente a lo largo de todo el año.
-                </p>
-            </div>
-        </section>
-    </header>
+<!-- SECCIÓN CLIMA -->
+<main class="container-fluid m-3 p-3 mt-3 justify-content-center">
+  <div class="row g-4 justify-content-center">
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-1.webp" class="card-img-top" alt="Paisaje invernal en Punta Arenas">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-2.jpg" class="card-img-top" alt="Vista de la ciudad en invierno">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-3.jpg" class="card-img-top" alt="Nevada en Punta Arenas">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-4.jpg" class="card-img-top" alt="Cielo despejado en Punta Arenas">
+      </div>
+    </div>
+  </div>
 
-    <!-- SECCIÓN CLIMA -->
-    <main  class="container-fluid m-3 p-3 mt-5 pt-5 justify-content-center">
-        <div class="row g-4 justify-content-center">
-
-            <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-1.webp" class="img-top"
-                        alt="imagen del clima en invierno">
-                </div>
-            </div>
-
-             <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-2.jpg" class="img-top"
-                        alt="imagen de la ciudad en invierno">
-                </div>
-            </div>
-
-             <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-3.jpg" class="img-top"
-                        alt="imagen nevando">
-                </div>
-            </div>
-
-             <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-4.jpg" class="img-top"
-                        alt="imagen de del clima despejado">
-                </div>
-            </div>
-
-        </div>
-        <div class="row g-4 mt-3 justify-content-center">
-
-            <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-5.jpg" class="img-top"
-                        alt="imagen de la entrada de punta arenas">
-                </div>
-            </div>
-
-             <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-6.jpg" class="img-top"
-                        alt="imagen de una parte de la ciudad">
-                </div>
-            </div>
-
-             <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-7.jpg" class="img-top"
-                        alt="Imagen de el lago y montaña">
-                </div>
-            </div>
-             <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
-                <div class="card border-0 h-100 d-flex flex-column">
-                    <img src="/viajes-chile-main/assets/img/clima-8.jpg" class="img-top"
-                        alt="imagen en verano con ballenas">
-                </div>
-            </div>
-
-        </div>
-    </main>
+  <div class="row g-4 mt-3 justify-content-center">
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-5.jpg" class="card-img-top" alt="Entrada de Punta Arenas">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-6.jpg" class="card-img-top" alt="Vista de una parte de la ciudad">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-7.jpg" class="card-img-top" alt="Lago y montaña en Punta Arenas">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3 d-flex p-2">
+      <div class="card border-0 h-100 d-flex flex-column">
+        <img src="/assets/img/clima-8.jpg" class="card-img-top" alt="Ballenas en verano en Punta Arenas">
+      </div>
+    </div>
+  </div>
+</main>
 
     <!-- FOOTER -->
     <footer id="footer" class="text-center text-white py-3 bg-black">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 pt-3">
-                    <h1 class="fw-bold">Viajes Chile</h1>
+                    <h2 class="fw-bold">Viajes Chile</h2>
                 </div>
 
                 <div class="col-12 col-sm-6 pt-3">
-                    <a href="https://www.instagram.com/" target="_blank"><i
-                            class="fa-brands fa-instagram fa-3x mx-3"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i
-                            class="fa-brands fa-linkedin fa-3x mx-3"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i
-                            class="fa-brands fa-facebook fa-3x mx-3"></i></a>
-                    <a href="https://wa.me/1234567890/" target="_blank"><i
-                            class="fa-brands fa-whatsapp fa-3x mx-3"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram fa-3x mx-3"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+                        <i class="fa-brands fa-linkedin fa-3x mx-3"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook fa-3x mx-3"></i>
+                    </a>
+                    <a href="https://wa.me/1234567890/" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-3x mx-3"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -156,7 +145,7 @@
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 
 </body>
 

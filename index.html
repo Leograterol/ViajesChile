@@ -7,25 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/img/favicon-48x48.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon-180x180.png">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+        referrerpolicy="no-referrer">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-    <title>Viajes Chile</title>
+    <!-- SEO -->
+    <title>Viajes Chile - Clima en Punta Arenas</title>
+    <meta name="description"
+        content="Descubre el clima de Punta Arenas según la clasificación de Köppen. Invierno frío y veranos suaves.">
 </head>
 
 <body>
@@ -34,13 +36,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#inicio">
-                <img class="imgnb me-2" src="assets/img/viajes.svg" alt="Logo Viajes Chile"> 
+                <img class="imgnb me-2" src="/assets/img/viajes.svg" alt="Logo Viajes Chile">
                 Viajes Chile
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
-                aria-label="Menú de navegación">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -60,8 +61,8 @@
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    class="active" aria-label="Imagen 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-label="Imagen 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                     aria-label="Imagen 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
@@ -107,7 +108,7 @@
                         <i class="fa-solid fa-city fa-2x"></i>
                     </div>
                     <div class="card-body texto">
-                        <p class="texto-colapsado">
+                        <p>
                             Punta Arenas es una comuna, ciudad y puerto interoceánico de la Zona Austral de Chile. Es la
                             capital de la Provincia de Magallanes, de la Región de Magallanes y de la Antártica Chilena
                             y, en forma no oficial, de la llamada "Patagonia chilena". Fue fundada
@@ -130,7 +131,7 @@
             <div class="col-12 col-sm-4 my-3">
                 <div class="card border-0 h-100">
                     <div class="card-body texto">
-                        <p class="texto-colapsado">
+                        <p>
                             La ubicación geográfica de la ciudad la convierte en un punto estratégico, tanto en lo
                             político como en lo histórico, turístico, geopolítico y económico. Junto con Coyhaique, son
                             las únicas dos capitales regionales de Chile ubicadas al este de la Cordillera
@@ -157,7 +158,7 @@
                         <i class="fa-solid fa-anchor fa-2x"></i>
                     </div>
                     <div class="card-body texto">
-                        <p class="texto-colapsado">
+                        <p>
                             Antes de la apertura del Canal de Panamá en 1914, era el principal puerto en la navegación
                             entre los océanos Pacífico y Atlántico por su ubicación en el estrecho de Magallanes,
                             circunstancia que explica su época de oro, que la hizo un gran centro cosmopolita
@@ -184,13 +185,15 @@
             <!-- Tarjeta -->
             <div class="col-12 col-sm-3 my-3">
                 <div class="card border-0 h-100">
-                    <img src="assets/img/vida-nocturna-card1.jpg" alt="Vida nocturna en Punta Arenas" class="img-top">
+                    <img src="assets/img/vida-nocturna-card1.jpg" alt="Vida nocturna en Punta Arenas"
+                        class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title text-center">
-                          <a href="/viajes-chile-main/assets/pages/vidanocturna.html" class="text-dark text-decoration-none">Vida Nocturna</a>
+                            <a href="/assets/pages/vidanocturna.html" class="text-dark text-decoration-none">Vida
+                                Nocturna</a>
                         </h4>
                         <p class="card-text fw-light">
-                             Disfruta de la vida nocturna y descubre qué hacer en Punta Arenas por la noche. Encuentra
+                            Disfruta de la vida nocturna y descubre qué hacer en Punta Arenas por la noche. Encuentra
                             las mejores zonas para salir de fiesta. los locales más visitados por turistas son:
                             Celebrity Pub, Sky Bar Punta Arenas, Los Brujos, Pub Nacional, entre otros.
                         </p>
@@ -200,10 +203,11 @@
 
             <div class="col-12 col-sm-3 my-3">
                 <div class="card border-0 h-100">
-                    <img src="assets/img/hoteles-card2.jpg" alt="Hoteles en Punta Arenas" class="img-top">
+                    <img src="assets/img/hoteles-card2.jpg" alt="Hoteles en Punta Arenas" class="card-img-top">
                     <div class="card-body">
-                        <h4 class="card-title text-center"> 
-                            <a href="/viajes-chile-main/assets/pages/hoteles.html" class="text-dark text-decoration-none">Hoteles</a></h4>
+                        <h4 class="card-title text-center">
+                            <a href="/assets/pages/hoteles.html" class="text-dark text-decoration-none">Hoteles</a>
+                        </h4>
                         <p class="card-text fw-light">
                             Entre los mejores hoteles de Punta Arena se encuentran: Cabo De Hornos, Boutique La Yegua
                             Loca, Innata Patagonia Casa Hotel, José Nogueira, Rey Don Felipe, Entre Vientos, Diego de
@@ -215,10 +219,11 @@
 
             <div class="col-12 col-sm-3 my-3">
                 <div class="card border-0 h-100">
-                    <img src="assets/img/clima-card3.png" alt="Clima de Punta Arenas" class="img-top">
+                    <img src="assets/img/clima-card3.png" alt="Clima de Punta Arenas" class="card-img-top">
                     <div class="card-body">
-                        <h4 class="card-title text-center"> 
-                            <a href="/viajes-chile-main/assets/pages/elclima.html" class="text-dark text-decoration-none">El Clima</a></h4>
+                        <h4 class="card-title text-center">
+                            <a href="/assets/pages/elclima.html" class="text-dark text-decoration-none">El Clima</a>
+                        </h4>
                         <p class="card-text fw-light">
                             De acuerdo con la clasificación climática de Koppen, el clima de Punta Arenas es oceánico
                             subpolar (Cfc). Esto significa que posee un invierno moderadamente frío, sin bajar en ningún
@@ -231,9 +236,9 @@
 
             <div class="col-12 col-sm-3 my-3">
                 <div class="card border-0 h-100">
-                    <img src="assets/img/fauna-card4.jpg" alt="Fauna chilena" class="img-top">
+                    <img src="assets/img/fauna-card4.jpg" alt="Fauna chilena" class="card-img-top">
                     <div class="card-body">
-                        <h4 class="card-title text-center data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        <h4 class="card-title text-center data-bs-toggle=" tooltip" data-bs-placement="bottom"
                             title="Presiona para ocultar y/o aparecer">Fauna</h4>
                         <p class="card-text fw-light">
                             En esta región llena de vida hay una fauna muy rica entre las que podemos encontrar:
@@ -268,55 +273,51 @@
                 <textarea class="form-control" placeholder="Escribe tu mensaje" required></textarea>
             </div>
 
-            <button id="enviar-datos" class="btn btn-outline-secondary fw-bold border-dark"
-                data-bs-toggle="tooltip" title="Enviar datos">
+            <button id="enviar-datos" class="btn btn-outline-secondary fw-bold border-dark" data-bs-toggle="tooltip"
+                title="Enviar datos">
+                <i class="fa-solid fa-paper-plane me-2"></i> <!-- Icono de avión de papel -->
                 Enviar
             </button>
+
         </form>
     </section>
 
     <!-- FOOTER -->
-     <footer id="footer" class="text-center text-white py-3  bg-black ">
-
+    <footer id="footer" class="text-center text-white py-3 bg-black">
         <div class="container">
-
             <div class="row">
-
                 <div class="col-12 col-sm-6 pt-3">
-
-                    <h1 class=" fw-bold ">Viajes Chile</h1>
+                    <h2 class="fw-bold">Viajes Chile</h2>
                 </div>
+
                 <div class="col-12 col-sm-6 pt-3">
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
                         <i class="fa-brands fa-instagram fa-3x mx-3"></i>
                     </a>
-
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
                         <i class="fa-brands fa-linkedin fa-3x mx-3"></i>
                     </a>
-
-                    <a href="https://www.facebook.com/" target="_blank">
-                        <i class="fa-brands fa-facebook-square fa-3x mx-3"></i>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook fa-3x mx-3"></i>
                     </a>
-
-                    <a href="https://wa.me/1234567890/" target="_blank">
+                    <a href="https://wa.me/1234567890/" target="_blank" rel="noopener noreferrer" aria-label="Whatsapp">
                         <i class="fa-brands fa-whatsapp fa-3x mx-3"></i>
                     </a>
                 </div>
-
             </div>
         </div>
     </footer>
 
+  <!-- Bootstrap JS (necesario para tooltips) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+<!-- jQuery (necesario porque usas $) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        crossorigin="anonymous"></script>
+<!-- Tu script personalizado -->
+<script src="/assets/js/script.js"></script>
 
-    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

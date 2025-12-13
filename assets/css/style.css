@@ -1,179 +1,254 @@
+/* ==========================
+   RESET + BASE
+========================== */
+:root {
+    --navbar-height: 70px;
+    --color-primary: #00bcd4;
+    --color-text: #222;
+    --color-light: #f8f9fa;
+    --color-dark: #000;
+}
+
 html {
-    scroll-behavior: auto !important;
-    margin: 0;
-    padding: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 body {
+    margin: 0;
+    padding: 0;
+    padding-top: var(--navbar-height);
     font-family: 'Oswald', sans-serif;
-    color: black;
+    color: var(--color-dark);
+    background-color: #fff;
 }
 
-
-
-header {
-    overflow: hidden;
-    position: relative;
-    top: 6rem;
-}
-
-
-/* el navbar */
-
+/* ==========================
+   NAVBAR
+========================== */
 .navbar {
     position: fixed;
-    width: 100vw;
-    z-index: 3 !important;
+    top: 0;              /* fija la navbar arriba */
+    left: 0;
+    width: 100%;
+    z-index: 1000;       /* asegura que quede por encima del contenido */
+    font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
-.navbar-brand {
-    font-family: "Oswald";
-    font-size: 50px;
+
+.navbar-brand img {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-light);
+    margin-left: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: 2px solid var(--color-primary);
+}
+
+/* ==========================
+   HEADER + CLIMA
+========================== */
+header {
+    margin-top: var(--navbar-height); /* justo debajo de la navbar */
+    position: relative;
+    overflow: hidden;
+    top: -75px !important; /* elimina desplazamiento extra */
+}
+
+.mt-4 {
+    margin-top: -9.5rem !important;
+}
+
+.header-section {
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.header-section h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
+.hero-line {
+    width: 50%;
+    height: 3px;
+    margin: 0 auto 1rem auto;
+    background-color: var(--color-primary);
+    border: none;
+}
 
-/* header*/
+.hero-line-clima {
+    width: 20%;
+    height: 3px;
+    margin: 0 auto 1rem auto;
+    background-color: var(--color-primary);
+    border: none;
+}
 
+.header-section .texto {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* ==========================
+   CAROUSEL
+========================== */
 .carousel-indicators [data-bs-target] {
-    height: 15px;
     width: 15px;
+    height: 15px;
     border-radius: 50%;
 }
 
-
-
-/* sobre punta arenas */
-
+/* ==========================
+   TIPOGRAFÍA GLOBAL
+========================== */
 h1 {
-    font-family: "Oswald";
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: 700;
 }
 
 .texto {
-    font-family: "Oswald";
+    
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: justify;
-}
-
-.ico {
-    background-color: black;
-    color: white;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.texto-colapsado {
-    max-height: 120px;
-    /* lo que quieras mostrar por defecto */
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-
-.texto-expandido {
-    max-height: none;
-    cursor: pointer;
+    color: var(--color-text);
 }
 
 
 
-
-/* destacados */
-
-h2 {
-    font-family: "Oswald";
-    font-size: 40px;
-    font-weight: 700;
+/* ==========================
+   DESTACADOS (CARDS)
+========================== */
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 5%;
 }
-
-.img-top {
-   width: 100%;        /* ocupa todo el ancho */
-  height: 200px;      /* altura fija */
-  object-fit: cover;  /* recorta manteniendo proporción */
-  display: block;     /* asegura que no haya espacios extra */
-border-radius: 5%;
-}
-
 
 .card-title {
-    font-family: "Oswald";
-    font-size: 28px;
-    font-weight: 400;
-    
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-a.text-dark.text-decoration-none:hover {
-  color: #0066cc;
-  font-size: 30px;
-}
-
-.card-text {
-    font-family: "Oswald";
-    font-size: 20px;
+.card-text .texto {
+    font-size: 1rem;
     font-weight: 400;
     text-align: justify;
+    color: var(--color-text);
 }
 
-
-/* contacto */
-
-.ct {
-    color: black;
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.form-control {
-    border-color: black;
-}
-
-.bt {
-    color: black;
-    font-size: 20px;
-    border-radius: 25px !important;
-}
-
-.card-img-top {
-    height: 200px;
-    /* Ajusta según tu diseño */
-    object-fit: cover;
-    /* Recorta la imagen manteniendo proporción */
-}
-
-.row.g-4>[class*='col-'] {
+.row.g-4 > [class*='col-'] {
     display: flex;
-    /* Hace que las columnas sean flexibles */
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5%;
 }
 
-/* footer */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
 
+a.text-dark.text-decoration-none:hover {
+    color: #0066cc;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   CONTACTO
+========================== */
+.ct {
+    color: var(--color-dark);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form-control {
+    border-color: var(--color-dark);
+}
+
+.bt {
+    color: var(--color-dark);
+    font-size: 1rem;
+    border-radius: 25px !important;
+    transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+/* ==========================
+   FOOTER
+========================== */
 #footer a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
+#footer a:focus {
+    outline: 2px solid var(--color-primary);
+}
 
-
-/* reducir medidas en formato mobile */
-
+/* ==========================
+   RESPONSIVE
+========================== */
 @media (max-width: 768px) {
     header {
         top: 4.1rem;
     }
 
     .navbar-brand {
-        font-family: "Oswald";
-        font-size: 25px;
+        font-size: 1.5rem;
         font-weight: 700;
         margin-left: 1rem;
     }
@@ -183,48 +258,43 @@ a.text-dark.text-decoration-none:hover {
     }
 
     h1 {
-        font-family: "Oswald";
-        font-size: 30px;
-        font-weight: 700;
-
+        font-size: 2rem;
     }
 
     h2 {
-        font-family: "Oswald";
-        font-size: 25px;
-        font-weight: 700;
+        font-size: 1.5rem;
     }
 
     .texto {
-        font-family: "Oswald";
-        font-size: 16px;
-        font-weight: 200;
-        text-align: justify;
+        font-size: 0.9rem;
     }
 
     .card-title {
-        font-family: "Oswald";
-        font-size: 20px;
-        font-weight: 400;
+        font-size: 1.2rem;
     }
 
     .card-text {
-        font-family: "Oswald";
-        font-size: 16px;
-        font-weight: 400;
-        text-align: justify;
+        font-size: 0.9rem;
     }
 
     .bt {
-        font-size: 16px;
+        font-size: 0.9rem;
         font-weight: 700;
     }
 
     #footer h1 {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     #footer i {
-        font-size: 25px;
+        font-size: 1.5rem;
+    }
+
+    .header-section {
+        padding: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
     }
 }
