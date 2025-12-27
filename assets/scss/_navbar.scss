@@ -1,0 +1,49 @@
+@use 'variables' as v;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand {
+  img {
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+
+  span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+.navbar-nav .nav-link {
+  color: v.$color-light;
+  margin-left: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+
+  &:hover,
+  &.active {
+    color: v.$color-primary;
+    transform: translateY(-2px);
+  }
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+    outline: 2px solid v.$color-primary;
+  }
+}

@@ -1,0 +1,19 @@
+@use 'variables' as v;
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: v.$navbar-height;
+  font-family: 'Oswald', sans-serif;
+  color: v.$color-dark;
+  background-color: #fff;
+}

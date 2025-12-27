@@ -1,0 +1,23 @@
+@use 'variables' as v;
+
+.ct {
+  color: $color-dark;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-control {
+  border-color: $color-dark;
+}
+
+.bt {
+  color: $color-dark;
+  font-size: 1rem;
+  border-radius: 25px !important;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-primary;
+    color: #fff;
+  }
+}
