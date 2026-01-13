@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use 'partials/variables' as v;
 
 header {
   margin-top: v.$navbar-height;

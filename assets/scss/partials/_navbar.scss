@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use 'partials/variables' as v;
 
 .navbar {
   position: fixed;
@@ -39,11 +39,3 @@
   }
 }
 
-.navbar-toggler {
-  border: none;
-
-  &:focus {
-    box-shadow: none;
-    outline: 2px solid v.$color-primary;
-  }
-}

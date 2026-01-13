@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use 'partials/variables' as v;
 
 h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
